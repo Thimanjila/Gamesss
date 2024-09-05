@@ -1,21 +1,16 @@
-
-import { BrowserRouter,  Route, Routes } from "react-router-dom";
-import Home from "./scenes/Home/Home.jsx";
-
-
-
+import React from 'react';
+import Board from './components/Board';
+import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        
-        
-      <Route path="/" element={<Home />} />
-      
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <Board />
+      </header>
+    </div>
   );
 }
 
 export default App;
+
